@@ -2,7 +2,7 @@
 
 void		StartupFolder(S_args* params)
 {
-	PWSTR	ppszPath;
+	wchar_t* ppszPath;
 	BOOL	bFailIfExists = 0;
 	wchar_t* dstFile;
 
