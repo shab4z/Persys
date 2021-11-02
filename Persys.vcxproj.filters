@@ -44,8 +44,5 @@
     <ClInclude Include="persys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="com_hijacking.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

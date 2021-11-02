@@ -113,7 +113,6 @@
     <ClCompile Include="com_hijacking.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="com_hijacking.h" />
     <ClInclude Include="persys.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

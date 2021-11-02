@@ -1,5 +1,4 @@
 #include "persys.h"
-#include "com_hijacking.h"
 
 void	ComHijackHelp()
 {
