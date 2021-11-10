@@ -12,6 +12,12 @@
 #include <Shlobj.h>
 #include <io.h>
 
+#include <winbase.h>
+#include <initguid.h>
+#include <ole2.h>
+#include <mstask.h>
+#include <msterr.h>
+
 #define VERSION "v0.1"
 #define	MAX_CLSID_LEN 38
 #define	MAX_REGVALUENAME_LEN 16383
@@ -42,6 +48,7 @@ void	LogonScript(S_args* params);
 void	Screensaver(S_args* params);
 void	ComHijacking(S_args* params);
 void	PsProfile(S_args* params);
+void	SchTask(S_args* params);
 
 typedef struct		modules
 {

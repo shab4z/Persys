@@ -107,6 +107,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="ps_profile.c" />
     <ClCompile Include="reg_run_keys.c" />
+    <ClCompile Include="schtask.c" />
     <ClCompile Include="shortcut_modif.c" />
     <ClCompile Include="startup_folder.c" />
     <ClCompile Include="screensaver.c" />

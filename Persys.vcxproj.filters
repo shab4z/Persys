@@ -39,6 +39,9 @@
     <ClCompile Include="ps_profile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="schtask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="persys.h">

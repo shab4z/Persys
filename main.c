@@ -1,13 +1,15 @@
 #include "persys.h"
 
 const modules mods[] = {
-	{L"StartupFolder", StartupFolder},
-	{L"ShortcutModif", ShortcutModif},
-	{L"RegRunKeys", RegRunKeys},
-	{L"LogonScript", LogonScript},
-	{L"Screensaver", Screensaver},
-	{L"PSProfile", PsProfile},
-	{L"COMHijacking", ComHijacking},
+	{L"startupfolder", StartupFolder},
+	{L"shortcutmodif", ShortcutModif},
+	{L"regRunKeys", RegRunKeys},
+	{L"logonscript", LogonScript},
+	{L"screensaver", Screensaver},
+	{L"psprofile", PsProfile},
+	{L"comhijacking", ComHijacking},
+	{L"schtask", SchTask},
+	//{L"schtaskmodif", SchTaskmodif},
 	{NULL, NULL}
 };
 
@@ -45,7 +47,7 @@ void Usage(void)
 		"\t* logonscript - Adds a new UserInitMprLogonScript registry value\n" \
 		"\t* comhijacking - Hijacks a specific COM object\n\n" \
 		"- Admin level modules :\n\n" \
-		"\t* schtask - Creates or update a scheduled task in order to execute the file\n"\
+		"\t* schtask - Creates a scheduled task in order to execute the file\n"\
 		"\t* service - Creates or reconfigure a service in order to execute the file\n"\
 		"\t* ...\n\n"
 	);
