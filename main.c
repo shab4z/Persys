@@ -47,7 +47,7 @@ void Usage(void)
 		"\t* logonscript - Adds a new UserInitMprLogonScript registry value\n" \
 		"\t* comhijacking - Hijacks a specific COM object\n\n" \
 		"- Admin level modules :\n\n" \
-		"\t* schtask - Creates a scheduled task in order to execute the file\n"\
+		"\t* schtask - Creates a scheduled task to execute the file as 'NT AUTHORITY\\SYSTEM'\n"\
 		"\t* service - Creates or reconfigure a service in order to execute the file\n"\
 		"\t* ...\n\n"
 	);
