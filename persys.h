@@ -48,7 +48,9 @@ void	LogonScript(S_args* params);
 void	Screensaver(S_args* params);
 void	ComHijacking(S_args* params);
 void	PsProfile(S_args* params);
-void	SchTask(S_args* params);
+void	SchTaskCreate(S_args* params);
+void	SvcCreate(S_args* params);
+
 
 typedef struct		modules
 {

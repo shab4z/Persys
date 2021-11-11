@@ -59,7 +59,7 @@ BOOL	ConfigTaskAttr(wchar_t* filePath, ITask** pITask)
 
 	hr = (*pITask)->lpVtbl->SetApplicationName(*pITask, filePath);
 	hr = (*pITask)->lpVtbl->SetFlags(*pITask, TASK_FLAG_RUN_ONLY_IF_LOGGED_ON);
-	hr = (*pITask)->lpVtbl->SetAccountInformation(*pITask, L"audit_admin", NULL);
+	hr = (*pITask)->lpVtbl->SetAccountInformation(*pITask, L"", NULL);
 	if (FAILED(hr))
 	{
 		(*pITask)->lpVtbl->Release(*pITask);
@@ -73,7 +73,8 @@ BOOL	SaveTask(ITask** pITask, ITaskTrigger** pITaskTrigger)
 	IPersistFile* pIPersistFile;
 	HRESULT	hr;
 
-	hr = (*pITask)->lpVtbl->QueryInterface(*pITask, &IID_IPersistFile, (void**)&pIPersistFile);
+	hr = (*pITask)->lpVtbl->QueryInterface(*pITask, &IID_IPersistFile,
+		(void**)&pIPersistFile);
 	hr = pIPersistFile->lpVtbl->Save(pIPersistFile, NULL, TRUE);
 	if (SUCCEEDED(hr))
 	{
@@ -140,7 +141,7 @@ BOOL    CreateTask(wchar_t* filePath, wchar_t* taskname)
 	}
 }
 
-void	SchTask(S_args* params)
+void	SchTaskCreate(S_args* params)
 {
 	printf("[*] Starting SchTask module...\n");
 	if (CreateTask(params->filePath, L"Persys4") == FALSE)

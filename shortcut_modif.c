@@ -1,6 +1,6 @@
 #include "persys.h"
 
-BOOL				setTargetToLNK(wchar_t* path, S_args* params)
+BOOL	setTargetToLNK(wchar_t* path, S_args* params)
 {
 	IShellLink* psl;
 	IPersistFile* ppf;

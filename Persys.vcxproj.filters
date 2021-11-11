@@ -42,6 +42,9 @@
     <ClCompile Include="schtask.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="service.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="persys.h">

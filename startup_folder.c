@@ -17,7 +17,8 @@ void		StartupFolder(S_args* params)
 				wcslen(params->fileName) + 2));
 			if (dstFile != NULL)
 			{
-				wmemset(dstFile, 0, (wcslen(ppszPath) + wcslen(params->fileName) + 2));
+				wmemset(dstFile, 0, (wcslen(ppszPath) +
+					wcslen(params->fileName) + 2));
 				wcscpy(dstFile, ppszPath);
 				wcscat(dstFile, L"\\");
 				wcscat(dstFile, params->fileName);

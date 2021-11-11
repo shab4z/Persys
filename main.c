@@ -8,8 +8,8 @@ const modules mods[] = {
 	{L"screensaver", Screensaver},
 	{L"psprofile", PsProfile},
 	{L"comhijacking", ComHijacking},
-	{L"schtask", SchTask},
-	//{L"schtaskmodif", SchTaskmodif},
+	{L"schtask", SchTaskCreate},
+	{L"service", SvcCreate},
 	{NULL, NULL}
 };
 
@@ -48,7 +48,7 @@ void Usage(void)
 		"\t* comhijacking - Hijacks a specific COM object\n\n" \
 		"- Admin level modules :\n\n" \
 		"\t* schtask - Creates a scheduled task to execute the file as 'NT AUTHORITY\\SYSTEM'\n"\
-		"\t* service - Creates or reconfigure a service in order to execute the file\n"\
+		"\t* service - Creates a service in order to execute the file\n"\
 		"\t* ...\n\n"
 	);
 }
