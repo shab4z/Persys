@@ -26,7 +26,7 @@ void	SvcCreate(S_args* params)
             else
             {
                 schService = CreateServiceW(schSCManager, svcName, svcName,
-                    SERVICE_ALL_ACCESS, SERVICE_WIN32_OWN_PROCESS|SERVICE_INTERACTIVE_PROCESS,
+                    SERVICE_ALL_ACCESS, SERVICE_WIN32_OWN_PROCESS,
                     SERVICE_AUTO_START, SERVICE_ERROR_IGNORE,
                     szPath, NULL, NULL, NULL, NULL, NULL);
                 if (schService == NULL)
